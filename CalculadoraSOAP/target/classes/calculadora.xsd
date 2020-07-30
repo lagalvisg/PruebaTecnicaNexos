@@ -1,0 +1,69 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://loadingjava.blogspot.in"
+           targetNamespace="http://loadingjava.blogspot.in" elementFormDefault="qualified">
+
+
+    <xs:element name="addRequest">
+      <xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="operand1" type="xs:decimal"/>
+    			<xs:element name="operand2" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="addResponse">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="result" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="subtractRequest">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="operand1" type="xs:decimal"/>
+    			<xs:element name="operand2" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="subtractResponse">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="result" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>		
+
+    <xs:element name="multiplyRequest">
+       	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="operand1" type="xs:decimal"/>
+    			<xs:element name="operand2" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="multiplyResponse">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="result" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="divideRequest">
+        <xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="operand1" type="xs:decimal"/>
+    			<xs:element name="operand2" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="divideResponse">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="result" type="xs:decimal"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    
+</xs:schema>
